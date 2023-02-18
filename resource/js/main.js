@@ -1,13 +1,5 @@
 $(function(){
 
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true,
-        navigation:true,
-        navigationPostion:'right'
-	});
-
 	$('#selType').change(function(){
 		var type = $(this).find(':selected').attr('value');
 		$(this).parent().removeClass();
