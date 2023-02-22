@@ -17,6 +17,11 @@ $(function(){
 		$(this).toggleClass("on");
 	}); 
 	
+	$('.list_tab li').click(function(){
+		$('.list_tab li').removeClass("on");
+		$(this).addClass("on");
+	}); 
+	
 });
 
 
