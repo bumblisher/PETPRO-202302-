@@ -46,8 +46,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html, body {
-	height:100%;
+	/* height:100%; */
 }
+body.blue{background: #2962F6;}
 ol, ul {
 	list-style: none;
 }
