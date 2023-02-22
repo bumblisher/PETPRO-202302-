@@ -19,10 +19,10 @@ header .header_inner ul li{height: 100%;box-sizing: border-box;flex:1}
 header .header_inner ul li a{display: block;height: 100%;box-sizing: border-box;color:#212529;font-size: 16px;font-weight: 500;text-decoration: none;}
 header .header_inner ul li.active a,
 header .header_inner ul li:hover a{font-weight: 700;color:#2962F6}
-header .nav{position: absolute;left:0;right:0;top:100px;height: 240px;border-bottom: 1px solid #E9ECEF;display: none;justify-content: center;padding-top: 40px;box-sizing: border-box;background: #fff;z-index: 100;}
+header .nav{position: absolute;left:0;right:0;top:100px;height: 240px;border-bottom: 1px solid #E9ECEF;display: none;justify-content: center;padding-top: 30px;box-sizing: border-box;background: #fff;z-index: 100;}
 header .nav > ul{display: flex;height: 100%;width: 1000px;justify-content: flex-end;}
 header .nav > ul > li{width: 150px;}
-header .nav > ul > li a{font-size: 16px;color:#343A40;text-decoration: none;}
+header .nav > ul > li a{font-size: 16px;color:#343A40;text-decoration: none;letter-spacing: -1px;}
 header .nav > ul > li ul li.active a,
 header .nav > ul > li ul li:hover a{font-weight: 700;}
 header .nav > ul > li ul li+li{margin-top: 15px;}
@@ -405,7 +405,52 @@ footer .info .f_logo{padding-left: 20px;background: url(../images/ico_footer.png
 
 /* 모바일 */
 .wrap.mob{min-width: auto;}
-.wrap.mob header{position: sticky;top:0;height: 60px;padding: 0 11px 0 15px;}
+.wrap.mob header{position: sticky;top:0px;height: 60px;padding: 0 11px 0 15px;background: #fff;z-index: 200;}
+.wrap.mob header .logo{width: 153px;height: 25px;background: url(../images/m_logo_blue.png) no-repeat center;}
+.wrap.mob header.blue{background: #2962F6;border: 0;}
+.wrap.mob header.blue .logo{background: url(../images/m_logo.png) no-repeat center;}
+.wrap.mob header.blue .menu,
+.wrap.mob header.blue .menu:before,
+.wrap.mob header.blue .menu:after{background: #fff;}
+.wrap.mob header.blue .is-active {background: transparent;}
+.menubtn{position: relative;padding: 17px 6px;background: transparent;margin-left: auto;}
+.menu {display: block;height: 4px;background: #212529;width: 26px;position: relative;transition: all .3s;border-radius: 2px;}
+.menu:before {content: "";position: absolute;left:0;top: -10px;background: #212529;width: 26px;height: 4px;transition: all .3s;border-radius: 2px}
+.menu:after {content: "";position: absolute;left:0;top: 10px;background: #212529;width: 26px;height: 4px;transition: all .3s;border-radius: 2px}
+.is-active {background: transparent;}
+.is-active:before {top: 0;transform: rotate(45deg);}
+.is-active:after {top: 0;transform: rotate(-45deg);}
+
+.wrap.mob header .nav{position: fixed;left:0;right:0;top:60px;bottom:0;height: auto;padding: 30px 15px;}
+.wrap.mob header .nav > ul{display: flex;height: 100%;width: 100%;justify-content: flex-end;}
+.wrap.mob header .nav > ul > li{width: auto;}
+.wrap.mob header .nav > ul > li > a{display: inline-block;font-size: 21px;color:#212529;text-decoration: none;font-weight: 700;margin-bottom: 10px;}
+.wrap.mob header .nav > ul > li > a:hover{color:#2962F6}
+.wrap.mob header .nav > ul > li +li{margin-top: 10px;}
+.wrap.mob header .nav > ul > li ul{margin-bottom: 20px;display: none;}
+.wrap.mob header .nav > ul > li ul a{font-size: 18px;color:#343A40;text-decoration: none;}
+.wrap.mob header .nav > ul > li ul li.active a,
+.wrap.mob header .nav > ul > li ul li:hover a{font-weight: 700;}
+.wrap.mob header .nav > ul > li ul li+li{margin-top: 10px;}
+.wrap.mob header:hover .nav{display: none;}
+.wrap.mob header.onmenu .nav{display: block;}
+.wrap.mob header.onmenu .nav > ul{display: block;}
+.wrap.mob header.onmenu{background: #fff;border-bottom: 1px solid #E9ECEF;}
+.wrap.mob header.onmenu .logo{background: url(../images/m_logo_blue.png) no-repeat center;}
+.wrap.mob header.onmenu .menu,
+.wrap.mob header.onmenu .menu:before,
+.wrap.mob header.onmenu .menu:after{background: #212529;}
+.wrap.mob header.onmenu .is-active {background: transparent;}
+
+.wrap.mob .sub_header{display: flex;height: auto;min-height: 400px;box-sizing: border-box;flex-direction: column;}
+.wrap.mob .sub_header .inner{width: 100%;text-align: center;display: block;flex:1;padding-top: 50px;}
+.wrap.mob .sub_header h2{font-size: 30px;}
+.wrap.mob .sub_header p{font-size: 15px;font-weight: 400;}
+.wrap.mob .sub_header.sub01 .inner{background-size: 157px 216px;background-position: bottom 12px center;padding-bottom: 240px;}
+.wrap.mob .sub_header.sub02 .inner{background-size: 240px 287px;background-position: bottom -60px center;padding-bottom: 240px;}
+.wrap.mob .sub_header.sub03 .inner{background-size: 196px ;background-position: bottom center;padding-bottom: 240px;}
+.wrap.mob .sub_header.sub04 .inner{background-size: 227px 221px;background-position: bottom 12px center;padding-bottom: 240px;}
+
 .wrap.mob .section_inner{width: auto;height: auto;padding:50px 15px }
 .wrap.mob .section_inner h2{font-size: 30px;}
 .wrap.mob .btn_cm{height: 60px;padding: 0 25px;}
@@ -471,3 +516,20 @@ footer .info .f_logo{padding-left: 20px;background: url(../images/ico_footer.png
 .wrap.mob .list_partner{width: auto;margin-top: 30px;}
 .wrap.mob .list_partner li{margin: 0;width: 150px;}
 .wrap.mob .list_partner li img{width: 150px;}
+
+.wrap.mob footer .f_banner{position: relative;width: 100%;top:auto;}
+.wrap.mob footer .section_inner{padding: 30px 15px;}
+.wrap.mob footer .info{position: relative;padding-top: 0;border-top: 0;margin-top: 30px;}
+.wrap.mob footer .info .f_logo{background: url(../images/ico_footer.png) no-repeat left top;margin-bottom: 0;}
+.wrap.mob footer .talk{top:0}
+
+.wrap.mob~.popup{min-width: auto;width:calc(100% - 30px);max-height: 90vh;box-sizing: border-box;border:0;display: flex;flex-direction: column;display: none;}
+.wrap.mob~.popup.on{display: flex;}
+.wrap.mob~.popup .pop_tit{text-align: center;}
+.wrap.mob~.popup .pop_cont{overflow: auto;}
+.wrap.mob~.popup .pop_cont .bot_btn{left:0;bottom: 0;right: 0;}
+.wrap.mob~.popup .grp_form > p{text-align: left;font-size: 15px;}
+.wrap.mob~.popup .grp_form+.grp_form{margin-top: 20px;}
+.wrap.mob~.popup .grp_check label{font-size: 15px;}
+.wrap.mob~.popup .grp_btn button{padding: 0 13px;}
+

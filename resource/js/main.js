@@ -21,8 +21,25 @@ $(function(){
 		$('.list_tab li').removeClass("on");
 		$(this).addClass("on");
 	}); 
-	
+
+	$('.menubtn').on('click', function(){
+		$('.menu').toggleClass('is-active');
+		$('header').toggleClass('onmenu');
+	});
+
+	$('.wrap.mob header .nav > ul > li > a').click(function(){
+		$(this).next().slideToggle(300);
+	}); 
 });
 
 
 
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+	if ($('html, body').scrollTop() > 687) {
+		$("#mainHeader").removeClass("blue");
+	} else {
+		$("#mainHeader").addClass("blue");
+	}
+}
