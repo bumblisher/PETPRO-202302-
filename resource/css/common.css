@@ -449,11 +449,32 @@ footer .info .f_logo{padding-left: 20px;background: url(../images/ico_footer.png
 .wrap.mob .sub_header.sub01 .inner{background-size: 157px 216px;background-position: bottom 12px center;padding-bottom: 240px;}
 .wrap.mob .sub_header.sub02 .inner{background-size: 240px 287px;background-position: bottom -60px center;padding-bottom: 240px;}
 .wrap.mob .sub_header.sub03 .inner{background-size: 196px ;background-position: bottom center;padding-bottom: 240px;}
+.wrap.mob .sub_header.sub03-1 .inner{background-size: 150px ;background-position: bottom -20px center;padding-bottom: 240px;}
 .wrap.mob .sub_header.sub04 .inner{background-size: 227px 221px;background-position: bottom 12px center;padding-bottom: 240px;}
+
+.wrap.mob main{padding: 50px 15px;min-height: 300px;}
+.wrap.mob .main_inner{width: 100%;}
+.wrap.mob .main_inner > .btn_cm{width: 100%;margin-top: 30px;}
+.wrap.mob .main_inner .top_info{font-size: 15px;}
+.wrap.mob .main_inner .top_info p{margin: 0;}
+.wrap.mob .main_inner .top_info button{font-size: 15px;}
+.wrap.mob .main_inner h3{font-size: 26px;}
+.wrap.mob .main_inner h4{font-size: 18px;text-align: left;margin: 30px 0 20px;}
+.wrap.mob .main_inner .grp_form > p{font-size: 15px;line-height: inherit;}
+.wrap.mob .grp_input input[type="text"],
+.wrap.mob .grp_input input[type="password"],
+.wrap.mob .grp_input select,
+.wrap.mob .grp_input textarea,
+.grp_radio2 label{font-size: 15px;}
+
+.wrap.mob .list_scroll{overflow: auto;white-space: nowrap;}
+.wrap.mob .list_scroll .list_tab{margin: 30px 0 0;}
+.wrap.mob .list_scroll .list_tab li{padding:0 15px;font-size: 15px;}
+.wrap.mob .temp_pdf{height: 250px;margin-top: 20px;}
 
 .wrap.mob .section_inner{width: auto;height: auto;padding:50px 15px }
 .wrap.mob .section_inner h2{font-size: 30px;}
-.wrap.mob .btn_cm{height: 60px;padding: 0 25px;}
+.wrap.mob .btn_cm{height: 60px;padding: 0 25px;font-size: 18px;}
 .wrap.mob .btn_sp{font: 14px;padding: 13px;}
 .wrap.mob .grp_form+.grp_form{margin-top: 20px;}
 .wrap.mob .grp_form > p{font-size: 18px;}
